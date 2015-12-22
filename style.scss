@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import "compass";
+// CompassのHTML5用リセットCSS読み込み
+@import "compass/reset";
+
+/*
+Theme Name:		smart
+Theme URI:		http://rfs.jp/
+Description:	smartサイト用のテーマです
+Author:			rhythmfactory
+Author URI:		http://rfs.jp/
+Version:		1.0
+License:
+License URI:
+*/
+
+/*#########################################################
+
+宣言
+
+#########################################################*/
+$padding: 20px;
+$border: 1px solid #000;
+
+/*#########################################################
+
+要素関連
+
+#########################################################*/
+
+p{
+	margin: 20px auto;
+}
+
+/*#########################################################
+
+WordPress必須クラス
+
+#########################################################*/
+.wp-caption{display: !important;}
+.wp-caption-text{display: !important;}
+.sticky{display: !important;}
+.gallery-caption{display: !important;}
+.bypostauthor{display: !important;}
+.alignright{display: !important;}
+.alignleft{display: !important;}
+.aligncenter{display: !important;}
+.screen-reader-text{display: !important;}
+/*#########################################################
+
+レイアウト
+
+#########################################################*/
+@mixin layout{
+	padding: $padding;
+	border-bottom: $border;
+}
+
+header {
+	@include layout;
+}
+
+main{
+	@include layout;
+	section.entry{
+		padding: $padding;
+	}
+}
+
+
+#sub{
+	@include layout;
+	.widget{
+		padding: $padding;
+	}
+}
+
+footer{
+	@include layout;
+}
