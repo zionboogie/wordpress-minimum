@@ -15,8 +15,14 @@ Template Name: smart
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
 	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="" />
+	<meta property="fb:app_id" content="">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
