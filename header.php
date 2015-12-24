@@ -9,12 +9,15 @@ Template Name: smart
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title><?php wp_title(); ?></title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
+
 	<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.ico">
 	<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+
 	<meta property="og:title" content="">
 	<meta property="og:type" content="">
 	<meta property="og:url" content="">
@@ -24,6 +27,7 @@ Template Name: smart
 	<meta property="fb:app_id" content="">
 
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
