@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: smart
+トップページ用テンプレート
 */
 get_header(); ?>
 
