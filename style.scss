@@ -1,12 +1,14 @@
 @charset "UTF-8";
+
+// Compass読み込み
 @import "compass";
 // CompassのHTML5用リセットCSS読み込み
 @import "compass/reset";
 
 /*
-Theme Name:		smart
+Theme Name:		SMART-MINIMUM
 Theme URI:		http://rfs.jp/
-Description:	smartサイト用のテーマです
+Description:	デザインありきで制作する際の、最小限必要と思われる構成のテンプレートです。
 Author:			rhythmfactory
 Author URI:		http://rfs.jp/
 Version:		1.0
@@ -14,13 +16,12 @@ License:
 License URI:
 */
 
-/*#########################################################
-
-宣言
-
-#########################################################*/
+// ########################################################
+// 宣言
+// ########################################################
 $padding: 20px;
-$border: 1px solid #000;
+$border: 3px solid #efefef;
+
 
 /*#########################################################
 
@@ -32,20 +33,23 @@ p{
 	margin: 20px auto;
 }
 
+
 /*#########################################################
 
 WordPress必須クラス
 
 #########################################################*/
-.wp-caption{display: !important;}
-.wp-caption-text{display: !important;}
-.sticky{display: !important;}
-.gallery-caption{display: !important;}
-.bypostauthor{display: !important;}
-.alignright{display: !important;}
-.alignleft{display: !important;}
-.aligncenter{display: !important;}
-.screen-reader-text{display: !important;}
+.wp-caption{/**/}
+.wp-caption-text{/**/}
+.sticky{/**/}
+.gallery-caption{/**/}
+.bypostauthor{/**/}
+.alignright{/**/}
+.alignleft{/**/}
+.aligncenter{/**/}
+.screen-reader-text{/**/}
+
+
 /*#########################################################
 
 レイアウト
@@ -56,18 +60,26 @@ WordPress必須クラス
 	border-bottom: $border;
 }
 
-header {
+/* サイトヘッダ */
+header#site-header {
 	@include layout;
 }
 
+/* メインカラム */
 main{
 	@include layout;
-	section.entry{
+	/* 記事エントリ */
+	article.entry{
+		padding: $padding;
+		border-bottom: 3px dotted #efefef;
+	}
+	/* 記事エントリのページナビゲーション */
+	.navigation{
 		padding: $padding;
 	}
 }
 
-
+/* サブカラム */
 #sub{
 	@include layout;
 	.widget{
@@ -75,6 +87,7 @@ main{
 	}
 }
 
-footer{
+/* サイトフッタ */
+footer#site-footer{
 	@include layout;
 }

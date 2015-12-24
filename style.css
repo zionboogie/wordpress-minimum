@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,56 +18,47 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 22, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 24, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 26, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 28, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/* line 30, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+  quotes: none; }
+  /* line 103, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
 
-/* line 32, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none;
-}
+  border: none; }
 
-/* line 116, ../../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
 /*
-Theme Name:		smart
+Theme Name:		SMART-MINIMUM
 Theme URI:		http://rfs.jp/
-Description:	smartサイト用のテーマです
+Description:	デザインありきで制作する際の、最小限必要と思われる構成のテンプレートです。
 Author:			rhythmfactory
 Author URI:		http://rfs.jp/
 Version:		1.0
@@ -76,102 +67,91 @@ License URI:
 */
 /*#########################################################
 
-宣言
-
-#########################################################*/
-/*#########################################################
-
 要素関連
 
 #########################################################*/
-/* line 31, style.scss */
+/* line 32, style.scss */
 p {
-  margin: 20px auto;
-}
+  margin: 20px auto; }
 
 /*#########################################################
 
 WordPress必須クラス
 
 #########################################################*/
-/* line 40, style.scss */
-.wp-caption {
-  display: !important;
-}
-
-/* line 41, style.scss */
-.wp-caption-text {
-  display: !important;
-}
-
 /* line 42, style.scss */
-.sticky {
-  display: !important;
-}
+.wp-caption {
+  /**/ }
 
 /* line 43, style.scss */
-.gallery-caption {
-  display: !important;
-}
+.wp-caption-text {
+  /**/ }
 
 /* line 44, style.scss */
-.bypostauthor {
-  display: !important;
-}
+.sticky {
+  /**/ }
 
 /* line 45, style.scss */
-.alignright {
-  display: !important;
-}
+.gallery-caption {
+  /**/ }
 
 /* line 46, style.scss */
-.alignleft {
-  display: !important;
-}
+.bypostauthor {
+  /**/ }
 
 /* line 47, style.scss */
-.aligncenter {
-  display: !important;
-}
+.alignright {
+  /**/ }
 
 /* line 48, style.scss */
+.alignleft {
+  /**/ }
+
+/* line 49, style.scss */
+.aligncenter {
+  /**/ }
+
+/* line 50, style.scss */
 .screen-reader-text {
-  display: !important;
-}
+  /**/ }
 
 /*#########################################################
 
 レイアウト
 
 #########################################################*/
-/* line 59, style.scss */
-header {
+/* サイトヘッダ */
+/* line 64, style.scss */
+header#site-header {
   padding: 20px;
-  border-bottom: 1px solid #000;
-}
+  border-bottom: 3px solid #efefef; }
 
-/* line 63, style.scss */
+/* メインカラム */
+/* line 69, style.scss */
 main {
   padding: 20px;
-  border-bottom: 1px solid #000;
-}
-/* line 65, style.scss */
-main section.entry {
-  padding: 20px;
-}
+  border-bottom: 3px solid #efefef;
+  /* 記事エントリ */
+  /* 記事エントリのページナビゲーション */ }
+  /* line 72, style.scss */
+  main article.entry {
+    padding: 20px;
+    border-bottom: 3px dotted #efefef; }
+  /* line 77, style.scss */
+  main .navigation {
+    padding: 20px; }
 
-/* line 71, style.scss */
+/* サブカラム */
+/* line 83, style.scss */
 #sub {
   padding: 20px;
-  border-bottom: 1px solid #000;
-}
-/* line 73, style.scss */
-#sub .widget {
-  padding: 20px;
-}
+  border-bottom: 3px solid #efefef; }
+  /* line 85, style.scss */
+  #sub .widget {
+    padding: 20px; }
 
-/* line 78, style.scss */
-footer {
+/* サイトフッタ */
+/* line 91, style.scss */
+footer#site-footer {
   padding: 20px;
-  border-bottom: 1px solid #000;
-}
+  border-bottom: 3px solid #efefef; }

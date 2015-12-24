@@ -8,7 +8,6 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 		<h3>コメント</h3>
-		<?php the_comments_navigation(); ?>
 
 		<ol class="comment-list">
 			<?php
@@ -18,7 +17,9 @@ if ( post_password_required() ) {
 			?>
 		</ol>
 
-		<?php the_comments_navigation(); ?>
+	<div class="comment-page-link">
+	<?php paginate_comments_links(); ?>
+	</div>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>
