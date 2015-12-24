@@ -1,4 +1,7 @@
 <?php
+/*
+パーツ：コメント
+*/
 if ( post_password_required() ) {
 	return;
 }

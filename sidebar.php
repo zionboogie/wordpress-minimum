@@ -1,3 +1,8 @@
+<?php
+/*
+パーツ：サイドバー
+*/
+?>
 <div id="sub">
 	<!-- widget-category -->
 	<aside class="widget widget-category">

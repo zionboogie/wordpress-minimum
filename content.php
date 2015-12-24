@@ -1,3 +1,8 @@
+<?php
+/*
+パーツ：記事一覧のループ部分
+*/
+?>
 <article class="entry" <?php post_class(); ?>>
 	<!-- entry-header -->
 	<header class="entry-header">

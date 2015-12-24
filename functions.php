@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: smart
+テーマのための関数
 */
 
 // メインコンテンツの横幅
