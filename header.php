@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: smart
+パーツ：ヘッダ
 */
 ?>
 <!DOCTYPE html>
