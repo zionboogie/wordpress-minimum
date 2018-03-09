@@ -20,7 +20,7 @@ License URI:
 // 宣言
 // ########################################################
 $padding: 20px;
-$border: 3px solid #efefef;
+$c-bg: #efefef;
 
 
 /*#########################################################
@@ -57,12 +57,12 @@ WordPress必須クラス
 #########################################################*/
 @mixin layout{
 	padding: $padding;
-	border-bottom: $border;
 }
 
 /* サイトヘッダ */
 header#site-header {
 	@include layout;
+	background-color: $c-bg;
 }
 
 /* メインカラム */
@@ -90,4 +90,5 @@ main{
 /* サイトフッタ */
 footer#site-footer{
 	@include layout;
+	background-color: $c-bg;
 }

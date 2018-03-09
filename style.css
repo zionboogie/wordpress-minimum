@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,42 +18,51 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
-/* line 22, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1; }
+  line-height: 1;
+}
 
-/* line 24, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
-/* line 26, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-/* line 28, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
-/* line 30, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none; }
-  /* line 103, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
+  quotes: none;
+}
+/* line 103, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
 
-/* line 32, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none; }
+  border: none;
+}
 
-/* line 116, ../../../../../Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../home/ec2-user/.gem/ruby/2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block; }
+  display: block;
+}
 
 /*
 Theme Name:		SMART-MINIMUM
@@ -72,7 +81,8 @@ License URI:
 #########################################################*/
 /* line 32, style.scss */
 p {
-  margin: 20px auto; }
+  margin: 20px auto;
+}
 
 /*#########################################################
 
@@ -81,39 +91,48 @@ WordPress必須クラス
 #########################################################*/
 /* line 42, style.scss */
 .wp-caption {
-  /**/ }
+  /**/
+}
 
 /* line 43, style.scss */
 .wp-caption-text {
-  /**/ }
+  /**/
+}
 
 /* line 44, style.scss */
 .sticky {
-  /**/ }
+  /**/
+}
 
 /* line 45, style.scss */
 .gallery-caption {
-  /**/ }
+  /**/
+}
 
 /* line 46, style.scss */
 .bypostauthor {
-  /**/ }
+  /**/
+}
 
 /* line 47, style.scss */
 .alignright {
-  /**/ }
+  /**/
+}
 
 /* line 48, style.scss */
 .alignleft {
-  /**/ }
+  /**/
+}
 
 /* line 49, style.scss */
 .aligncenter {
-  /**/ }
+  /**/
+}
 
 /* line 50, style.scss */
 .screen-reader-text {
-  /**/ }
+  /**/
+}
 
 /*#########################################################
 
@@ -121,37 +140,42 @@ WordPress必須クラス
 
 #########################################################*/
 /* サイトヘッダ */
-/* line 64, style.scss */
+/* line 63, style.scss */
 header#site-header {
   padding: 20px;
-  border-bottom: 3px solid #efefef; }
+  background-color: #efefef;
+}
 
 /* メインカラム */
 /* line 69, style.scss */
 main {
   padding: 20px;
-  border-bottom: 3px solid #efefef;
   /* 記事エントリ */
-  /* 記事エントリのページナビゲーション */ }
-  /* line 72, style.scss */
-  main article.entry {
-    padding: 20px;
-    border-bottom: 3px dotted #efefef; }
-  /* line 77, style.scss */
-  main .navigation {
-    padding: 20px; }
+  /* 記事エントリのページナビゲーション */
+}
+/* line 72, style.scss */
+main article.entry {
+  padding: 20px;
+  border-bottom: 3px dotted #efefef;
+}
+/* line 77, style.scss */
+main .navigation {
+  padding: 20px;
+}
 
 /* サブカラム */
 /* line 83, style.scss */
 #sub {
   padding: 20px;
-  border-bottom: 3px solid #efefef; }
-  /* line 85, style.scss */
-  #sub .widget {
-    padding: 20px; }
+}
+/* line 85, style.scss */
+#sub .widget {
+  padding: 20px;
+}
 
 /* サイトフッタ */
 /* line 91, style.scss */
 footer#site-footer {
   padding: 20px;
-  border-bottom: 3px solid #efefef; }
+  background-color: #efefef;
+}
