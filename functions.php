@@ -3,14 +3,27 @@
 テーマのための関数
 */
 
-// メインコンテンツの横幅
-if ( ! isset( $content_width ) ) $content_width = 700;
+/*#########################################################
+
+基本設定
+
+#########################################################*/
+// WordPressのバージョンを非表示
+remove_action('wp_head','wp_generator');
+
+// 絵文字削除
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('admin_print_scripts', 'print_emoji_detection_script');
+remove_action('wp_print_styles', 'print_emoji_styles' );
+remove_action('admin_print_styles', 'print_emoji_styles');
 
 // フィードのlink要素を自動出力する
 add_theme_support( 'automatic-feed-links' );
+
 // 投稿ページにてアイキャッチ画像の欄を表示
 add_theme_support( 'post-thumbnails' );
-// html5で出力
+
+// WordPressコアから出力されるHTMLタグをHTML5のフォーマットにする
 add_theme_support( 'html5', array(
 	'search-form',
 	'comment-form',
@@ -18,6 +31,7 @@ add_theme_support( 'html5', array(
 	'gallery',
 	'caption',
 ) );
+
 // 投稿フォーマットのサポート
 add_theme_support( 'post-formats', array(
 	'aside',	//アサイド
@@ -31,6 +45,12 @@ add_theme_support( 'post-formats', array(
 	'chat',		//チャット
 ) );
 
+
+/*#########################################################
+
+汎用関数
+
+#########################################################*/
 
 // TITLE要素用
 function my_wp_title($title) {
@@ -71,3 +91,12 @@ function smart_entry_tag($pretag="", $endtag="") {
 		);
 	}
 }
+
+
+/*#########################################################
+
+テーマ専用設定
+
+#########################################################*/
+
+
