@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-// Compass読み込み
-@import "compass";
-// CompassのHTML5用リセットCSS読み込み
-@import "compass/reset";
-
+// Bourbon読み込み
+@import "bourbon";
+// 基本設定の読み込み
+@import "css/_reset.scss";	// リセットCSS読み込み
+@import "css/_base.scss";
 /*
 Theme Name:		SMART-MINIMUM
 Theme URI:		http://rfs.jp/
@@ -15,6 +15,7 @@ Version:		1.0
 License:
 License URI:
 */
+
 
 // ########################################################
 // 宣言

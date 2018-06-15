@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+/*#########################################################
+
+mixin
+
+#########################################################*/
+
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+	color: $normal;
+	@if $visited {
+		&:visited {
+			color: $visited;
+		}
+	}
+	@if $focus {
+		&:focus {
+			color: $focus;
+		}
+	}
+	@if $hover {
+		&:hover {
+			color: $hover;
+		}
+	}
+	@if $active {
+		&:active {
+			color: $active;
+		}
+	}
+}
+
+/* ========================================================
+メディアクエリ
+=========================================================*/
+/*
+Bootstrap 3
+768px未満: スマホ（デフォルト）
+※スマホは、Media Queries無しで記述。
+768px以上をタブレットサイズ
+992px以上をデスクトップサイズ
+1200px以上を大きめのデスクトップサイズ
+
+iPhone4: 320 × 480
+iPhone5: 320 × 568
+iPhone6: 375 × 627
+iPhone6s: 414 × 736
+Nexus6: 414 × 659
+*/
+
+// メディアクエリ用MIXIN
+$breakpoints: (
+	'sm': 'screen and (max-width: 768px)',
+	'sm-min': 'screen and (min-width: 768px)',
+	'md': 'screen and (max-width: 992px)',
+	'lg': 'screen and (max-width: 1200px)',
+	'xl': 'screen and (min-width: 1200px)',
+) !default;
+@mixin mq($breakpoint: md) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+
+/*#########################################################
+
+基本設定
+
+#########################################################*/
+// 基本単位
+$unit: 1rem;
+
+// カラー
+$c-darkgray: #252f39;
+$c-lightgray: #959595;
+$c-frostywhite: #e0e3e4;
+$c-bg: #f0f1f6; //f4f4f4 //#ebeae8;#f5f4ed;
+$c-font: #000;
+
+
+// フォントアイコン
+// Open Sansの読み込み
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Playfair+Display+SC:400,700,900); //Playfair+Display:400,700
+// フォントサイズ
+@mixin fontsize($size: 24, $base: 16) {
+	font-size: ($size / $base) * 1rem;
+}
+
+// CSSスプライト
+// $sprite-sprite-dimensions: true;
+// @import "sprite/*.png";
+// @include all-sprite-sprites;
+
+// 3点リーダー
+@mixin ellipsis-clamp($line) {
+	 @include ellipsis(false);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line;
+	height: $line+em;
+}
+
+
+/*#########################################################
+
+要素関連
+
+#########################################################*/
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+$font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+html {
+	@include fontsize(17);
+	// Open Sans=google Helvetica Neue=OSX標準 游ゴシック=Mac OS 10.9とWindows 8.1から標準搭載
+	font-family: $font-family;
+}
+p {
+	margin: $unit auto;
+	line-height: 1.8;
+}
+
+a {
+	// 通常時の文字色、:hover、:active、:visited、:focus
+	@include link-colors(#000, $c-lightgray, #00a0e9, #000, $c-lightgray);
+}
+body {
+	background-color: $c-bg;
+}
+/* 固定幅フォント */
+pre,
+code,
+kbd,
+samp tt {
+	// font-family: monospace;
+}
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+small {
+	font-size: 0.8rem;
+}
+/* subscript&superscript */
+sub,
+sup {
+	font-size: 0.8rem;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+code {}
+strong {
+	font-weight: bold;
+}
+strong.red {
+	color: #e00909;
+	font-weight: normal;
+}
+i {
+	font-weight: normal;
+	font-style: italic;
+}
+input[type=submit] {
+}
+input[type=submit]:hover {
+}
+input[type=text],
+input[type=email],
+input[type=url] {
+	box-sizing: border-box;;
+	border: 1px solid $c-frostywhite;
+	padding: $unit*0.5;
+}
+textarea {
+	box-sizing: border-box;;
+	border: 1px solid $c-frostywhite;
+	padding: $unit*0.5;
+}
